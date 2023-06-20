@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "name":"person1",
+        "email":"person1@example.com",
+        "phone":9876304543
+    },
+    {
+        "id":2,
+        "name":"person2",
+        "email":"person2@example.com",
+        "phone":9876304589
+    },
+    {
+        "id":3,
+        "name":"person3",
+        "email":"person3@example.com",
+        "phone":9876304654
+    },
+    {
+        "id":4,
+        "name":"person4",
+        "email":"person4@example.com",
+        "phone":9876301230
+    },
+    {
+        "id":5,
+        "name":"person5",
+        "email":"person5@example.com",
+        "phone":9876304578
+    }
+]
