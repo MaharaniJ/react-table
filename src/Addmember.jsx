@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './Table.css'
 
 function Addmember({setDatas}) {
+    const nameRef = useRef()
+    const emailRef = useRef()
+    const phoneRef = useRef()
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -15,14 +18,18 @@ function Addmember({setDatas}) {
             phone,
         }
         setDatas(preData=>preData.concat(newMember))
+        nameRef.current.value=""
+        emailRef.current.value=""
+        phoneRef.current.value=""
+
     }
   return (
     <div>
         <form className='addForm' onSubmit={handleSubmit}>
-            <input type='text' name='name' placeholder='Enter your name'></input>
-            <input type='text' name='email' placeholder='Enter your Email'></input>
-            <input type='text' name='phone' placeholder='Enter you number'></input>
-            <button type='button'>Add</button>
+            <input type='text' name='name' placeholder='Enter your name' ref={nameRef}></input>
+            <input type='text' name='email' placeholder='Enter your Email' ref={emailRef}></input>
+            <input type='text' name='phone' placeholder='Enter you number' ref={phoneRef}></input>
+            <button type='submit'>Add</button>
         </form>
     </div>
   )

@@ -23,6 +23,15 @@ input{
     padding:5px;
     margin-right:5px;
 }
+table td button{
+    padding:5px 10px;
+    border-radius:5%;
+    cursor:pointer;
+}
+.addForm{
+    margin-bottom:30px;
+
+}
 .addForm button{
     width:100px;
     padding:5px;
