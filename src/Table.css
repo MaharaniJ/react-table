@@ -16,9 +16,11 @@ table th{
     color:black;
 }
 table{
+    width: 100%;
     margin-top:20px;
     border-collapse:collapse;
 }
+/* Add any additional styling as needed */
 input{
     padding:5px;
     margin-right:5px;
@@ -60,3 +62,15 @@ table td button{
 .delete:hover{
     background-color:rgb(108,8,8)
 }
+/* th,td{
+    padding: 8px;
+    text-align: left;
+    border: 1px solid black;
+}
+th {
+    background-color: #f2f2f2;
+  }
+  button {
+    margin-top: 8px;
+  }
+   */
